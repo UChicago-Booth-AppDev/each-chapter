@@ -5,3 +5,10 @@
 # Look in the github README file for example output
 
 p "Enter a word:"
+
+array = gets.chomp.split("")
+
+array.each_with_index do |letter, index|
+  times = array.count(array[index])
+  p "#{letter} appears #{times} times"
+end
